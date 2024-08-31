@@ -12,18 +12,13 @@ To set up the project locally, follow these steps:
 
    ```bash
    git clone https://github.com/lunadev55/AgileDashboard.git
-
-2. **Navigate to the project directory:**
-
-   ```bash
-   cd AgileDashboard
    
-3. **Install dependencies:**
+2. **Install dependencies:**
 
    ```bash
    npm install
 
-4. **Install Charts.js and ng2-charts:**
+3. **Install Charts.js and ng2-charts:**
 
    ```bash
    npm install charts.js ng2-charts
