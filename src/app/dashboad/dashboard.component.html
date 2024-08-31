@@ -1,0 +1,48 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <div class="form-group">
+        <label for="category">Category:</label>
+        <select id="category" class="form-control" [(ngModel)]="selectedCategory" (change)="onCategoryChange($event)">
+          <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <div class="form-group">
+        <label for="product">Product:</label>
+        <select id="product" class="form-control" [(ngModel)]="selectedProduct" (change)="onProductChange($event)">
+          <option *ngFor="let product of filteredProducts" [value]="product.id">{{ product.name }}</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <div class="form-group">
+        <label for="brand">Brand:</label>
+        <select id="brand" class="form-control" [(ngModel)]="selectedBrand" (change)="onBrandChange($event)">
+          <option *ngFor="let brand of filteredBrands" [value]="brand.id">{{ brand.name }}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <div class="text-center">
+        <div>
+          <canvas baseChart 
+                  [data]="chartData"
+                  [options]="chartOptions"
+                  [labels]="chartData.labels"
+                  [type]="chartType">
+          </canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
