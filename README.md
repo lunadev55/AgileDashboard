@@ -1,27 +1,45 @@
-# AgileSolutionProject
+# Angular Dashboard with Charts
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
+## Description
 
-## Development server
+This is an Angular project using Angular 18.2.2, Charts.js, and ng2-charts to create a dashboard with interactive charts.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Installation
 
-## Code scaffolding
+To set up the project locally, follow these steps:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. **Clone the repository:**
 
-## Build
+   ```bash
+   git clone https://github.com/lunadev55/AgileDashboard.git
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. **Navigate to the project directory:**
 
-## Running unit tests
+   ```bash
+   cd AgileDashboard
+   
+3. **Install dependencies:**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   ```bash
+   npm install
 
-## Running end-to-end tests
+4. **Install Charts.js and ng2-charts:**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```bash
+   npm install charts.js ng2-charts
 
-## Further help
+## Usage
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. To run the project locally, use:
+
+  ```bash
+  ng serve
+  ```
+
+Open your browser and navigate to http://localhost:4200 to view the application.
+
+## Configuration
+
+Ensure that Charts.js and ng2-charts are properly configured in your Angular modules. Refer to the ng2-charts documentation for integration details.
+
+![screenshot](https://github.com/user-attachments/assets/cc184a94-68b3-4d5f-9125-d1202c8a7cbb)
